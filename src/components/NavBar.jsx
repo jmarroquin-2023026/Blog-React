@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://flowbitecom/docs/images/logo.svg"
+            src="https://pbs.twimg.com/profile_images/473681342819880960/sLM1Wtq9_400x400.png"
             className="h-8"
             alt="App Logo"
             onError={(e) => {
@@ -18,9 +18,7 @@ const Navbar = () => {
               e.target.src="https://placehold.co/32x32/cccccc/ffffff?text=Logo"; 
             }}
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Mi Aplicación 
-          </span>
+
         </Link>
 
         <button
@@ -50,24 +48,7 @@ const Navbar = () => {
                 Inicio
               </Link>
             </li>
-            <li>
-              <Link
-                to="/auth"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                onClick={() => setIsOpen(false)}
-              >
-                Iniciar sesión
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/register"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                onClick={() => setIsOpen(false)}
-              >
-                Registrarse
-              </Link>
-            </li>
+            
           </ul>
         </div>
       </div>

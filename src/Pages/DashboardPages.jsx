@@ -3,17 +3,16 @@ import { usePublication } from '../shared/hooks/usePublication'
 import { DashboardContent } from '../components/DashboardContent'
 
 export const DashboardPages = () => {
-    const {getPublications,allPublications}=usePublication()
+  const {getPublications, allPublications} = usePublication()
 
-    useEffect(()=>{
-        getPublications()
-    },[])
+  useEffect(() => {
+    getPublications()
+  }, [])
+
   return (
-    <div>
-        
-      <DashboardContent publications={allPublications} getPublications={getPublications}/>
-    </div>
+    <DashboardContent 
+      publications={allPublications} 
+      getPublications={getPublications}
+    />
   )
 }
-
-

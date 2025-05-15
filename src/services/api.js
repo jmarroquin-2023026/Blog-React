@@ -18,9 +18,20 @@ export const getPostsRequest=async()=>{
     }
 }
 
-export const getPostRequest=async(id)=>{
+export const getCommentsRequest=async(id)=>{
     try{
-        return await apiClient.get(`/publication/${id}`)
+        return await apiClient.get(`/comments/${id}`)
+    }catch(e){
+        return {
+            error:true,
+            e
+        }
+    }
+}
+
+export const addCommentRequest=async(id,data)=>{
+    try{
+        return await apiClient.post(`/addComment/${id}`,data)
     }catch(e){
         return {
             error:true,
